@@ -1,0 +1,14 @@
+{
+    "app": "markupcraft",
+    "version": "0.6",
+    "released_at": "2026-10-19 00:03 UTC",
+    "git": "28f3444 (dev had uncommitted changes)",
+    "libs": {
+        "noble-ciphers": "2.4.0",
+        "noble-curves": "2.4.0",
+        "noble-hashes": "2.4.0",
+        "pdf-lib": "1.17.1",
+        "pdfjs": "6.3.289"
+    },
+    "notes": "MarkupCraft can change the PDF itself, as you asked on Discord: the Content tool (B) selects the page's own lines, pictures and text, then moves, resizes, recolors or deletes them, edits a line's points and curves, changes the words of a line of text in its own font, replaces a picture with a PNG or JPEG, and Put into the page turns drawn markups into page content; each change is one undo step, saved into the copy you download, and what you didn't touch stays byte for byte the same. Encrypted and signed PDFs are left alone, and the tool says why. Paste a picture from the clipboard as a picture markup, and type a calculation in Calibrate. Not built yet: turning page objects to any angle, changing text in a font with no width tables (such as Times), and text that reflows; edited copies have not been opened in Acrobat yet. Every app gets Show bars, Reset the layout, a toolbar menu, an interface size and pen and touch. Spanish (es-MX) and, new, Bahasa Indonesia are machine-made drafts, not yet reviewed."
+}
