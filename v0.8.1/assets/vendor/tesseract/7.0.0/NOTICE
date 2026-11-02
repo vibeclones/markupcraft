@@ -1,0 +1,15 @@
+Third-party components inside tesseract.js 7.0.0 / tesseract.js-core 7.0.0 (as built by the tesseract.js project; read from
+the files' own license comments and the libraries' strings in the WebAssembly):
+
+In core/*.wasm.js (compiled with Emscripten):
+- Tesseract OCR 5 — Apache-2.0 — https://github.com/tesseract-ocr/tesseract
+- Leptonica — BSD-2-Clause-style (Leptonica license) — http://www.leptonica.org/
+- zlib 1.2.12 — Zlib — https://zlib.net/
+- libpng 1.6.38 — libpng license (PNG Reference Library License version 2, permissive) — http://www.libpng.org/
+- libjpeg (IJG, Thomas G. Lane, Guido Vollbeding) — IJG license (permissive, attribution) — https://www.ijg.org/
+- libtiff — libtiff license (BSD-like, permissive) — http://www.simplesystems.org/libtiff/
+- libwebp — BSD-3-Clause — https://chromium.googlesource.com/webm/libwebp
+
+In tesseract.esm.min.js / worker.min.js (see the .LICENSE.txt files):
+- buffer (Feross Aboukhadijeh) — MIT; ieee754 — BSD-3-Clause; regenerator-runtime — MIT; zlib.js (imaya) — MIT;
+  idb-keyval, is-url, wasm-feature-detect, bmp-js — Apache-2.0 / MIT (package metadata).
