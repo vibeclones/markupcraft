@@ -1,0 +1,12 @@
+tesseract.js 7.0.0 + tesseract.js-core 7.0.0 — the Tesseract OCR engine compiled to WebAssembly, run in a Web Worker.
+License: Apache License 2.0 (see LICENSE; tesseract.js-core's own LICENSE is the same Apache-2.0 text). The libraries compiled
+into the core follow in LICENSE with their own texts (Leptonica, zlib, libpng, libjpeg/IJG, libtiff, libwebp; approved by the
+owner 2026-10-26 for the OCR engine); NOTICE lists them and the JavaScript bundles' parts.
+Source: https://github.com/naptha/tesseract.js  Package: https://www.npmjs.com/package/tesseract.js/v/7.0.0
+        https://github.com/naptha/tesseract.js-core  Package: https://www.npmjs.com/package/tesseract.js-core/v/7.0.0
+Kept, unchanged: dist/tesseract.esm.min.js, dist/worker.min.js (+ their .LICENSE.txt), and from the core only the three
+LSTM-only builds as core/tesseract-core{,-simd,-relaxedsimd}-lstm.wasm.js (the worker picks one by the browser's SIMD support;
+the legacy-engine builds are left out: MarkupCraft runs OEM LSTM_ONLY). Source maps left out.
+Used by MarkupCraft (0.7.1 71.10) to read the words on scanned pages, only when someone runs Read text (OCR); worker, core
+and language data are always given as local paths (workerPath, corePath, langPath), so nothing is fetched from a CDN.
+The language data is a separate folder: assets/vendor/tessdata/.

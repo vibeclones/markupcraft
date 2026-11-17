@@ -1,0 +1,10 @@
+tessdata_fast 4.1.0 — trained LSTM models (traineddata) for the Tesseract OCR engine, the "fast" (integer) set.
+License: Apache License 2.0 (see LICENSE, the repository's own file).
+Source: https://github.com/tesseract-ocr/tessdata_fast/tree/4.1.0 (each <lang>.traineddata, gzipped here with gzip -9 so
+tesseract.js reads <lang>.traineddata.gz; the data inside is unchanged).
+Kept: English (eng) and the languages of MarkupCraft's interface: ara ces chi_sim chi_tra deu fra hin ind ita jpn kor nld pol
+por rus spa tha tur ukr vie (28.4 MB gzipped in all, 0.4–3.0 MB each).
+Chosen over tessdata_best (float models: 15 MB for English and not run by the LSTM-only WebAssembly core) and the
+tesseract.js "4.0.0_best_int" English (3.0 MB): on MarkupCraft's test pages fast and best_int read the same (see
+docs/apps/markupcraft-ocr-spike.md § 0.7.1 engine), fast is a third smaller and quicker.
+Used by MarkupCraft (0.7.1 71.10) through assets/vendor/tesseract/; loaded only when someone runs Read text (OCR).
